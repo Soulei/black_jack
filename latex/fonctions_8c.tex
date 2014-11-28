@@ -1,0 +1,151 @@
+\hypertarget{fonctions_8c}{\section{Référence du fichier fonctions.\-c}
+\label{fonctions_8c}\index{fonctions.\-c@{fonctions.\-c}}
+}
+
+
+fonctions d'un jeu de Black Jack  M'C\-H\-A\-A\-R yassine  
+
+
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{fonctions_8c_a508cc209fbc99ea975d1c1ecb5f1c6fe}{\#define {\bfseries L\-I\-B\-R\-E}~0}\label{fonctions_8c_a508cc209fbc99ea975d1c1ecb5f1c6fe}
+
+\item 
+\hypertarget{fonctions_8c_aa6a8403ad0170c8f0a3ccbb6f982f36d}{\#define {\bfseries B\-A\-N\-Q\-U\-E}~1}\label{fonctions_8c_aa6a8403ad0170c8f0a3ccbb6f982f36d}
+
+\item 
+\hypertarget{fonctions_8c_a7f907d351a198b9a0405ce45155625dc}{\#define {\bfseries J\-O\-U\-E\-U\-R}~2}\label{fonctions_8c_a7f907d351a198b9a0405ce45155625dc}
+
+\item 
+\hypertarget{fonctions_8c_a06f74699ca6f213b3297382d27152578}{\#define {\bfseries B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E}~3}\label{fonctions_8c_a06f74699ca6f213b3297382d27152578}
+
+\item 
+\hypertarget{fonctions_8c_ab3167868edabf23ce42007cfa46f0a34}{\#define {\bfseries D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S}~0}\label{fonctions_8c_ab3167868edabf23ce42007cfa46f0a34}
+
+\item 
+\hypertarget{fonctions_8c_a907dc60a26479ff6bf53792573e4bafa}{\#define {\bfseries F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S}~12}\label{fonctions_8c_a907dc60a26479ff6bf53792573e4bafa}
+
+\item 
+\hypertarget{fonctions_8c_adaac26fcb2ef9b0c98dbcd70395f81d4}{\#define {\bfseries D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}~13}\label{fonctions_8c_adaac26fcb2ef9b0c98dbcd70395f81d4}
+
+\item 
+\hypertarget{fonctions_8c_a5e5f41c3b532ee5dbea0aa4abcad0c5c}{\#define {\bfseries F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}~25}\label{fonctions_8c_a5e5f41c3b532ee5dbea0aa4abcad0c5c}
+
+\item 
+\hypertarget{fonctions_8c_af174177234917e71a4ddc296b65bf836}{\#define {\bfseries D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S}~26}\label{fonctions_8c_af174177234917e71a4ddc296b65bf836}
+
+\item 
+\hypertarget{fonctions_8c_a59b61abc1fe046e0165a739067b1854b}{\#define {\bfseries F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S}~38}\label{fonctions_8c_a59b61abc1fe046e0165a739067b1854b}
+
+\item 
+\hypertarget{fonctions_8c_a776e9059fbac10978154260ee7ebfe08}{\#define {\bfseries D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S}~39}\label{fonctions_8c_a776e9059fbac10978154260ee7ebfe08}
+
+\item 
+\hypertarget{fonctions_8c_aef89a2a14b5ec6b3999fed241935ca9d}{\#define {\bfseries F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S}~51}\label{fonctions_8c_aef89a2a14b5ec6b3999fed241935ca9d}
+
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+short \hyperlink{fonctions_8c_a6abf9e7f9fc14ad236cf90717f19a335}{tirer\-\_\-carte} (short joueur)
+\begin{DoxyCompactList}\small\item\em fonction qui permet de tirer une carte du jeu de B\-L\-A\-C\-K J\-A\-C\-K \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_8c_aa59cf3010d2ca3d7dd3f9628e6a7bc72}{afficher\-\_\-carte} (short num)
+\begin{DoxyCompactList}\small\item\em une fonction qui permet d'afficher le contenu de la carte \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_8c_afa494b732dc159e63aed47b51b578cc7}{afficher\-\_\-main} (short joueur)
+\begin{DoxyCompactList}\small\item\em fonction qui affiche la main du J\-O\-U\-E\-U\-R ou la B\-A\-N\-Q\-U\-E \end{DoxyCompactList}\item 
+\hypertarget{fonctions_8c_a64180c56230f29427000bab3b3ae30aa}{void \hyperlink{fonctions_8c_a64180c56230f29427000bab3b3ae30aa}{afficher\-\_\-main\-\_\-cachee} (void)}\label{fonctions_8c_a64180c56230f29427000bab3b3ae30aa}
+
+\begin{DoxyCompactList}\small\item\em fonction qui affiche la main cachée de la B\-A\-N\-Q\-U\-E \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_8c_a78a803096c0bf8f9cd1ec51fd80da07d}{afficher\-\_\-score} (short $\ast$score)
+\begin{DoxyCompactList}\small\item\em fonction qui permet d'afficher le score su joueur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{fonctions_8c_a4afa838396554698e0668c1a09161ebc}{short {\bfseries cartes} \mbox{[}52\mbox{]}}\label{fonctions_8c_a4afa838396554698e0668c1a09161ebc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+fonctions d'un jeu de Black Jack  M'C\-H\-A\-A\-R yassine \begin{DoxyVersion}{Version}
+0.\-2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+22 novembre 2014 
+\end{DoxyDate}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{fonctions_8c_aa59cf3010d2ca3d7dd3f9628e6a7bc72}{\index{fonctions.\-c@{fonctions.\-c}!afficher\-\_\-carte@{afficher\-\_\-carte}}
+\index{afficher\-\_\-carte@{afficher\-\_\-carte}!fonctions.c@{fonctions.\-c}}
+\subsubsection[{afficher\-\_\-carte}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\-\_\-carte (
+\begin{DoxyParamCaption}
+\item[{short}]{num}
+\end{DoxyParamCaption}
+)}}\label{fonctions_8c_aa59cf3010d2ca3d7dd3f9628e6a7bc72}
+
+
+une fonction qui permet d'afficher le contenu de la carte 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Le} & numero de la carte \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8c_afa494b732dc159e63aed47b51b578cc7}{\index{fonctions.\-c@{fonctions.\-c}!afficher\-\_\-main@{afficher\-\_\-main}}
+\index{afficher\-\_\-main@{afficher\-\_\-main}!fonctions.c@{fonctions.\-c}}
+\subsubsection[{afficher\-\_\-main}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\-\_\-main (
+\begin{DoxyParamCaption}
+\item[{short}]{joueur}
+\end{DoxyParamCaption}
+)}}\label{fonctions_8c_afa494b732dc159e63aed47b51b578cc7}
+
+
+fonction qui affiche la main du J\-O\-U\-E\-U\-R ou la B\-A\-N\-Q\-U\-E 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Qui} & demande le nom du joueur soit B\-A\-N\-Q\-U\-E ou J\-O\-U\-E\-U\-R \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8c_a78a803096c0bf8f9cd1ec51fd80da07d}{\index{fonctions.\-c@{fonctions.\-c}!afficher\-\_\-score@{afficher\-\_\-score}}
+\index{afficher\-\_\-score@{afficher\-\_\-score}!fonctions.c@{fonctions.\-c}}
+\subsubsection[{afficher\-\_\-score}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\-\_\-score (
+\begin{DoxyParamCaption}
+\item[{short $\ast$}]{score}
+\end{DoxyParamCaption}
+)}}\label{fonctions_8c_a78a803096c0bf8f9cd1ec51fd80da07d}
+
+
+fonction qui permet d'afficher le score su joueur 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Il} & sert à pointer sur un entier \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonctions_8c_a6abf9e7f9fc14ad236cf90717f19a335}{\index{fonctions.\-c@{fonctions.\-c}!tirer\-\_\-carte@{tirer\-\_\-carte}}
+\index{tirer\-\_\-carte@{tirer\-\_\-carte}!fonctions.c@{fonctions.\-c}}
+\subsubsection[{tirer\-\_\-carte}]{\setlength{\rightskip}{0pt plus 5cm}short tirer\-\_\-carte (
+\begin{DoxyParamCaption}
+\item[{short}]{joueur}
+\end{DoxyParamCaption}
+)}}\label{fonctions_8c_a6abf9e7f9fc14ad236cf90717f19a335}
+
+
+fonction qui permet de tirer une carte du jeu de B\-L\-A\-C\-K J\-A\-C\-K 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Qui} & demande le nom du joueur soit B\-A\-N\-Q\-U\-E ou J\-O\-U\-E\-U\-R \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+le numero de la carte du joueur tirée au hasard 
+\end{DoxyReturn}
