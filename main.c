@@ -69,31 +69,35 @@ void evaluer_score(short joueur, short carte_recue, short *score){
 int main(){
 	short i=0;
 	short num;
-	short num_j, num_b;
-	short score1 = 0;
-	short score2 = 0;
-	int reponse;
+	short num_j, num_b; /*Numero de carte de la banque num_b et numero de carte du joueur num_j*/
+	short score1 = 0;	/*Score de la banque score1*/
+	short score2 = 0;	/*Score du joueur score2*/
+	char reponse;
+	
 	nb_as_banque=0;
 	nb_as_joueur=0;
 	srand(time(NULL));
+	
 	while(i<52){
 
 		cartes[i]=LIBRE;
 		i++;		
 
 	}
-	printf("\n\n===================  		DISTRIBUTION  		============================\n");
+			printf("\n\n===================  		DISTRIBUTION  		============================\n");
 	
 	for(i=0;i<2;i++) {
 
 		printf("\n\n    ========================  	MAIN JOUEUR:  	============================\n");
+		
 		num_j = tirer_carte(JOUEUR);
 		afficher_carte(num_j);
-		evaluer_score(JOUEUR, num_j, &score2);
+		evaluer_score(JOUEUR, num_j, &score1);
 		afficher_score(&score2);
 
 		printf("\n\n    ========================  	MAIN BANQUE :  ============================\n");
-		if(i<1) {
+		
+		if(i<1) {		/*Condition if else qui permet de tirer une carte normale et face cachée de la banque dans une seule boucle */
 			num_b = tirer_carte(BANQUE);
 			afficher_carte(num_b);
 			evaluer_score(BANQUE, num_b, &score1);
@@ -109,11 +113,12 @@ int main(){
 	}
 		
 	
-	printf("\n\n **************  TOUR DU JOUEUR  *************\n");
+		printf("\n\n    ************************  TOUR DU JOUEUR :  ****************************\n");
 	
-	printf("\nVOULEZ VOUS UNE CARTE, -1 POUR NON, 1 POUR OUI\n");
-	scanf("%i", &reponse);
-	while((reponse != -1) && (score2 < 21)) {
+	printf("\nVOULEZ VOUS UNE CARTE, n POUR NON, y POUR OUI\n");
+	scanf("%c", &reponse);
+	while((reponse != 'n') && (score2 < 21)) {
+		
 		num_j = tirer_carte(JOUEUR);
 		afficher_carte(num_j);
 		evaluer_score(JOUEUR, num_j, &score2);
@@ -132,20 +137,21 @@ int main(){
 	
 	
 	if(score2==21 && nb_as_joueur == 1) {
+		
 			printf("BLACK JACK !!!! Vous avez gagné!!!! \n");
 			return 0;
+			
 	}
 	
 	printf("\n\n    ========================  	MAIN BANQUE CACHEE :  ============================\n");
 	
 	afficher_main_cachee();
+	
 
-	printf("\n\n **************  TOUR DE LA BANQUE  *************\n");
-
+		printf("\n\n    ************************  TOUR DE LA BANQUE :  ****************************   \n");
 	
-	
-	
-	while(score1 <= 16) {
+	while(score1 <= 16) {	/*Condition à laquelle la banque peut toujours tirer une carte*/
+		
 		num_b = tirer_carte(BANQUE);
 		afficher_carte(num_b);
 		evaluer_score(BANQUE, num_b, &score1);
@@ -160,16 +166,24 @@ int main(){
 		}
 		printf("\n");
 	}
+	
 	if(score1==21 && nb_as_banque == 1) {
-			printf("BLACK JACK !!!! La Banque a gagné avec un blackjack!!!! :\n");
-			return 0;
+		
+		printf("BLACK JACK !!!! La Banque a gagné avec un blackjack!!!! :\n");
+		return 0;
 	}
+	
 	printf("\n");
+	
 	if(score2>score1 && score1>=17) {
+		
 		printf("Felicitaion vous avez gagne\n");
 	}
+	
 	else {
+		
 		printf("La BANQUE a gagne\n");
 	}
+	
 	return 0;
 }
