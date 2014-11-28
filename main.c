@@ -42,7 +42,7 @@ short donner_valeur_carte(short joueur, short carte){
 	}
 	
 	else
-		return carte;		
+		return carte+1;		
 }						
 
 void evaluer_score(short joueur, short carte_recue, short *score){
