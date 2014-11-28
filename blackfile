@@ -1,6 +1,0 @@
-res_black:	main.o	fonctions.o
-		gcc -o res_black main.o fonctions.o -Wall
-main.o:		main.c
-		gcc -c main.c
-fonctions.o:	fonctions.c
-		gcc -c fonctions.c
