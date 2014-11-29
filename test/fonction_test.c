@@ -23,7 +23,7 @@ void test_tirer_carte(void) {
 void test_donner_valeur_carte(void) {
 	
 	CU_ASSERT(donner_valeur_carte(1, tirer_carte(1))<12);
-    CU_ASSERT(donner_valeur_carte(1, tirer_carte(1))>1);
+    	CU_ASSERT(donner_valeur_carte(1, tirer_carte(1))>1);
 	CU_ASSERT(donner_valeur_carte(2, tirer_carte(2))<12);
 	CU_ASSERT(donner_valeur_carte(2, tirer_carte(2))>1);
 
@@ -45,7 +45,7 @@ int main ( void )
     
 
     if ( (NULL == CU_add_test(pSuite, "test tirer_carte", test_tirer_carte)) ||
-		 (NULL == CU_add_test(pSuite, "test donner_valeur_carte",test_donner_valeur_carte))
+	(NULL == CU_add_test(pSuite, "test donner_valeur_carte",test_donner_valeur_carte))
 
 		)
     {
