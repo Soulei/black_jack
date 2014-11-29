@@ -132,7 +132,7 @@ int main(){
 			return 0;
 		}
 		printf("VOULEZ VOUS UNE CARTE ?\n");
-		scanf("%i", &reponse);
+		scanf("%c", &reponse);
 	}
 	
 	
