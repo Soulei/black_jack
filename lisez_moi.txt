@@ -14,7 +14,7 @@ $ make res_black
 Compilation du fichier test
 
 $ make clean
-$ make test
+$ make test.exe
 
 Fonctions utilisées pour la réalisation du programme
 
