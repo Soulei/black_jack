@@ -14,9 +14,9 @@ TD3
 
 #Compilation du fichier test
 
-
 -$ make clean
 -$ make test.exe
+
 
 #Fonctions utilisées pour la réalisation du programme
 
