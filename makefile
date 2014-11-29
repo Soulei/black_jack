@@ -3,11 +3,11 @@ Test = test
 
 #Pour la compilation du programme principale#
 res_black:	main.o	fonctions.o
-		gcc -o res_black main.o fonctions.o -Wall
+		gcc -g main.o fonctions.o -o res_black -Wall
 main.o:		main.c
-		gcc -c main.c
+		gcc -g -c main.c
 fonctions.o:	fonctions.c
-		gcc -c fonctions.c
+		gcc -g -c fonctions.c  
 
 #Pour la compilation du programme de test#
 

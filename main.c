@@ -92,7 +92,7 @@ int main(){
 		
 		num_j = tirer_carte(JOUEUR);
 		afficher_carte(num_j);
-		evaluer_score(JOUEUR, num_j, &score1);
+		evaluer_score(JOUEUR, num_j, &score2);
 		afficher_score(&score2);
 
 		printf("\n\n    ========================  	MAIN BANQUE :  ============================\n");
