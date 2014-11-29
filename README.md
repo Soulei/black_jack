@@ -11,12 +11,12 @@ Compilation du programme principale
 ===================================
 
 $ make clean
-$ make resblack
+$ make res_black
 
 Compilation du fichier test
 ===========================
 
-$ make clean
+$ make clean==
 $ make test.exe
 
 Fonctions utilisées pour la réalisation du programme
