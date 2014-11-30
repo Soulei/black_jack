@@ -2,10 +2,10 @@
 Test = test
 
 #Pour la compilation du programme principale#
-res_black:	main.o	fonctions.o
-		gcc -g main.o fonctions.o -o res_black -Wall
-main.o:		main.c
-		gcc -g -c main.c
+res_black:	bj_main.o	fonctions.o
+		gcc -g bj_main.o fonctions.o -o res_black -Wall
+bj_main.o:		bj_main.c
+		gcc -g -c bj_main.c
 fonctions.o:	fonctions.c
 		gcc -g -c fonctions.c  
 
