@@ -47,11 +47,14 @@ short donner_valeur_carte(short joueur, short carte){
 
 void evaluer_score(short joueur, short carte_recue, short *score){
 		carte_recue = donner_valeur_carte(joueur, carte_recue);
-		if(carte_recue == 0 && (*score)>=21){		//ajout de la condition où le score est > à 21 donc le as devient 1 point à la place de 11
-			*score = *score + 1;
+		if(carte_recue == 11){		//ajout de la condition où le score est > à 21 donc le as devient 1 point à la place de 11
+			*score = *score + carte_recue;
+			if((*score) > 21) {
+			*score = *score - 10;
+			}
 		}
 		else if(carte_recue<10){
-			*score = *score + carte_recue + 1;
+			*score = *score + carte_recue;
 		}
 		else
 			*score = *score + carte_recue;
@@ -132,7 +135,7 @@ int main(){
 			return 0;
 		}
 		printf("VOULEZ VOUS UNE CARTE ?\n");
-		scanf("%c", &reponse);
+		scanf("%*c%c", &reponse);
 	}
 	
 	
