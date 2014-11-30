@@ -6,6 +6,9 @@ Projet BlackJack
 - Souleiman Iman Choukri
 - Licence SPI 2eme année
 TD3
+# Depot Git du programme
+
+- git clone https://github.com/Soulei/black_jack.git
 
 #Compilation du programme principale
 
